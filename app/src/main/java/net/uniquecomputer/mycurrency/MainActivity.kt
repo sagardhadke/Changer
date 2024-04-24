@@ -24,7 +24,9 @@ class MainActivity : AppCompatActivity() {
         }
 
 
+        binding.submitBtn.setOnClickListener {
 
+        }
 
     }
 }
