@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="app_bg">#EEF0F4</color>
+    <color name="card_bg">#E9EAFF</color>
+    <color name="text_bg">#FF9800</color>
 </resources>
