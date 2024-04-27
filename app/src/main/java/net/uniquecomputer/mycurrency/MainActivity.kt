@@ -34,7 +34,8 @@ class MainActivity : AppCompatActivity() {
         binding.indiaCard.setOnClickListener {
             var input = binding.inputEt.text.toString()
             if (input.equals("") || input.toString().length <= 0) {
-                Toast.makeText(this, "$input is Not Valid", Toast.LENGTH_SHORT).show()
+                binding.inputEt.error = "Invalid Number"
+                Toast.makeText(this, "$input Invalid Number", Toast.LENGTH_SHORT).show()
             } else {
                 convertInr()
             }
@@ -43,7 +44,7 @@ class MainActivity : AppCompatActivity() {
         binding.usaCard.setOnClickListener {
             var input = binding.inputEt.text.toString()
             if (input.equals("") || input.toString().length <= 0) {
-                Toast.makeText(this, "$input is Not Valid", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "$input Invalid Number", Toast.LENGTH_SHORT).show()
             } else {
                 convertUSd()
             }
